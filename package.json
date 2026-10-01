@@ -1,0 +1,12 @@
+{
+  "name": "contractors-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "بوابة المقاولين الذكية — اتحاد المقاولين الفلسطينيين (موقع ثابت جاهز للنشر على Vercel)",
+  "scripts": {
+    "dev": "npx --yes serve public -l 3000",
+    "build": "node -e \"require('fs').accessSync('public/index.html'); console.log('Static site ready: public/')\"",
+    "deploy": "npx vercel --prod"
+  },
+  "engines": { "node": ">=18" }
+}
